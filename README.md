@@ -23,8 +23,8 @@ mc.routerTo({
   url: '/pages/home/index'
   type: 'push',
   query: {
-  	id: 0,
-  	bool: true,
+    id: 0,
+    bool: true,
   },
   success: () => console.log('successfully'),
 });
@@ -54,7 +54,7 @@ mc.routerTo({
 Page({
   onLoad(options) {
     /** query对象中的属性都是维持了跳转之前的变量类型 */
-  	const query = mc.decoding(options); // { id: 0, bool: true }
+    const query = mc.decoding(options); // { id: 0, bool: true }
   }
 });
 ```
