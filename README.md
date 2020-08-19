@@ -82,3 +82,7 @@ mc.back(delta);
 ```javascript
 mc.goHome();
 ```
+
+## License
+
+[MIT](https://github.com/Oc-master/medusa-wx-router/blob/master/LICENSE)
