@@ -25,8 +25,8 @@ mc.routerTo({
   query: {
   	id: 0,
   	bool: true,
-	},
-	success: () => console.log('successfully'),
+  },
+  success: () => console.log('successfully'),
 });
 ```
 
@@ -71,7 +71,7 @@ Page({
 **示例**
 
 ```javascript
-mc.back();
+mc.back(delta);
 ```
 
 ### goHome
