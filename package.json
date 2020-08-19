@@ -1,0 +1,33 @@
+{
+  "name": "medusa-wx-router",
+  "version": "1.0.0",
+  "description": "微信小程序统一路由功能函数",
+  "main": "index.js",
+  "scripts": {
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oc-master/medusa-wx-router.git"
+  },
+  "keywords": [
+    "wx",
+    "router",
+    "miniprogram"
+  ],
+  "author": "O_c",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Oc-master/medusa-wx-router/issues"
+  },
+  "homepage": "https://github.com/Oc-master/medusa-wx-router#readme",
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.2.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
