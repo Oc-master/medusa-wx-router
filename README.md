@@ -41,7 +41,7 @@ mc.routerTo('/pages/home/index', {
 | type      | API        |
 | --------- | ---------- |
 | push      | navigateTo |
-| Replace   | redirectTo |
+| replace   | redirectTo |
 | reLaunch  | reLaunch   |
 | switchTab | switchTab  |
 
