@@ -127,6 +127,7 @@ export const routerTo = (param, ...rest) => {
 
 export const decoding = (options) => {
   const { query } = options;
+  if (!query) return {};
   return JSON.parse(decodeURIComponent(query));
 };
 
