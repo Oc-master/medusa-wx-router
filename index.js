@@ -81,7 +81,7 @@ const _encoding = (query) => encodeURIComponent(JSON.stringify(query));
  */
 const _mergeQuery = (url, query, type) => {
   if (type === 'switchTab') return url;
-  return `/${url}?query=${_encoding(query)}`;
+  return `/${url}?query=${_encoding(query)}&isMedusaRouter=true`;
 };
 
 /**
