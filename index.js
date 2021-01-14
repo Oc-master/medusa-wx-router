@@ -127,7 +127,7 @@ export const routerTo = (param, ...rest) => {
 
 export const decoding = (options = {}) => {
   const { msQuery } = options;
-  if (msQuery) return JSON.parse(decodeURIComponent(query));
+  if (msQuery) return JSON.parse(decodeURIComponent(msQuery));
   return options;
 };
 
