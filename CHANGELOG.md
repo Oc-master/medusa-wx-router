@@ -1,3 +1,18 @@
+## [1.0.5](https://github.com/Oc-master/medusa-wx-router/compare/1.0.4...1.0.5) (2021-01-14)
+
+
+### Bug Fixes
+
+* **index.js:** 修复decoding方法参数解析失败问题 ([3dfced6](https://github.com/Oc-master/medusa-wx-router/commit/3dfced661c18464e518ad646d3b131d09ef0d4cb))
+* **index.js:** 修复switchTab跳转方式路径解析异常问题 ([9dbe0ff](https://github.com/Oc-master/medusa-wx-router/commit/9dbe0ffaff9eae61066f2081c48cc5a755eb9722))
+
+
+### Features
+
+* **index.js:** 优化decoding功能 ([4fd1e15](https://github.com/Oc-master/medusa-wx-router/commit/4fd1e15adb03cb682234f312b3a00d0ab07b4231))
+
+
+
 ## 1.0.4 (2021-01-04)
 
 
