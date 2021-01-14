@@ -1,3 +1,12 @@
+## 1.0.4 (2021-01-04)
+
+
+### Features
+
+* **index.js:** 添加识别标识 ([c4e3654](https://github.com/Oc-master/medusa-wx-router/commit/c4e365411069e8e9b28b5588ae959edbd7b34a45))
+
+
+
 ## 1.0.3 (2020-10-23)
 
 
