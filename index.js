@@ -80,8 +80,8 @@ const _encoding = (query) => encodeURIComponent(JSON.stringify(query));
  * @param {String} type 路由跳转方式
  */
 const _mergeQuery = (url, query, type) => {
-  if (type === 'switchTab') return url;
-  return `/${url}?query=${_encoding(query)}&isMedusaRouter=true`;
+  if (type === 'switchTab') return `/${url}`;
+  return `/${url}?msQuery=${_encoding(query)}`;
 };
 
 /**
@@ -125,10 +125,10 @@ export const routerTo = (param, ...rest) => {
   _errorHandle('Error: 参数有误');
 };
 
-export const decoding = (options) => {
-  const { query } = options;
-  if (!query) return {};
-  return JSON.parse(decodeURIComponent(query));
+export const decoding = (options = {}) => {
+  const { msQuery } = options;
+  if (msQuery) return JSON.parse(decodeURIComponent(msQuery));
+  return options;
 };
 
 export const back = (delta = 1) => platform.navigateBack({ delta });
