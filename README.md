@@ -20,17 +20,19 @@
 **示例**
 
 ```javascript
-mc.routerTo({
-  url: '/pages/home/index',
+import ms from 'medusa-wx-router';
+/** 完整调用方式 */
+ms.routerTo({
+  url: 'pages/home/index',
   type: 'push',
   query: {
     id: 0,
     bool: true
   },
-  success: () => console.log('successfully')
+  success: () => console.log('successfully'),
 });
-/** push 方式快捷形式 */
-mc.routerTo('/pages/home/index', {
+/** navigateTo API快捷形式 */
+ms.routerTo('pages/home/index', {
   id: 0,
   bool: true
 });
@@ -61,7 +63,7 @@ mc.routerTo('/pages/home/index', {
 Page({
   onLoad(options) {
     /** query对象中的属性维持了跳转前的变量类型 */
-    const query = mc.decoding(options); // { id: 0, bool: true }
+    const query = ms.decoding(options); // { id: 0, bool: true }
   }
 });
 ```
@@ -79,7 +81,7 @@ Page({
 **示例**
 
 ```javascript
-mc.back(delta);
+ms.back(delta);
 ```
 
 ### goHome
@@ -89,7 +91,7 @@ mc.back(delta);
 **示例**
 
 ```javascript
-mc.goHome();
+ms.goHome();
 ```
 
 ## License
