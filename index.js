@@ -80,7 +80,7 @@ const _encoding = (query) => encodeURIComponent(JSON.stringify(query));
  * @param {String} type 路由跳转方式
  */
 const _mergeQuery = (url, query, type) => {
-  if (type === 'switchTab') return url;
+  if (type === 'switchTab') return `/${url}`;
   return `/${url}?query=${_encoding(query)}&isMedusaRouter=true`;
 };
 
